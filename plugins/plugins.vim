@@ -5,14 +5,8 @@ Plug 'neoclide/coc.nvim', {'branch': 'release'}
 " theme
 Plug 'arcticicestudio/nord-vim'
 
-" Better Syntax Support
-Plug 'sheerun/vim-polyglot'
-
 " File Explorer
 Plug 'scrooloose/NERDTree'
-
-" Auto pairs for '(' '[' '{'
-Plug 'jiangmiao/auto-pairs'
 
 " Status bar
 Plug 'vim-airline/vim-airline'
@@ -23,6 +17,9 @@ Plug 'scrooloose/nerdtree'
 " Find file
 Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
 Plug 'junegunn/fzf.vim'
+
+" Git
+Plug 'airblade/vim-gitgutter'
 
 call plug#end()
 
@@ -43,3 +40,4 @@ let g:fzf_action = {
   \ 'ctrl-s': 'split',
   \ 'ctrl-v': 'vsplit'
   \}
+
