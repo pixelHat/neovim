@@ -18,8 +18,12 @@ Plug 'scrooloose/nerdtree'
 Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
 Plug 'junegunn/fzf.vim'
 
-" Git
+
 Plug 'airblade/vim-gitgutter'
+
+" Tailwind
+Plug 'iamcco/coc-tailwindcss',  {'do': 'yarn install --frozen-lockfile && yarn run build'}
+
 
 call plug#end()
 
