@@ -36,3 +36,6 @@ augroup numbertoggle
   autocmd BufEnter,FocusGained,InsertLeave * set relativenumber
   autocmd BufLeave,FocusLost,InsertEnter   * set norelativenumber
 augroup END
+
+autocmd BufWritePre *.py execute 'call CocAction("runCommand", "pyright.organizeimports")'
+autocmd BufWritePre *.py execute 'call CocAction("format")'
