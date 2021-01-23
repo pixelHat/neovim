@@ -4,9 +4,6 @@ nnoremap <M-k>    :resize +2<CR>
 nnoremap <M-h>    :vertical resize -2<CR>
 nnoremap <M-l>    :vertical resize +2<CR>
 
-inoremap jk <Esc>
-inoremap kj <Esc>
-
 " Alternate way to save
 nnoremap <C-s> :w<CR>
 " Alternate way to quit
