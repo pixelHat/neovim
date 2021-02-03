@@ -38,4 +38,4 @@ augroup numbertoggle
 augroup END
 
 autocmd BufWritePre *.py execute 'call CocAction("runCommand", "pyright.organizeimports")'
-autocmd BufWritePre *.py execute 'call CocAction("format")'
+autocmd BufWritePre * execute 'call CocAction("format")'
