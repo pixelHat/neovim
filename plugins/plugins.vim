@@ -1,5 +1,7 @@
 call plug#begin('~/.vim/plugged')
 
+Plug 'gabrielelana/vim-markdown'
+
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
 
 " theme
