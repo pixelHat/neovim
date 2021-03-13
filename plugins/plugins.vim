@@ -1,5 +1,7 @@
 call plug#begin('~/.vim/plugged')
 
+Plug 'vim-test/vim-test'
+
 Plug 'gabrielelana/vim-markdown'
 
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
