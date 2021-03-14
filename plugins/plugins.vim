@@ -1,10 +1,12 @@
 call plug#begin('~/.vim/plugged')
 
+Plug 'Chiel92/vim-autoformat'
+
+Plug 'dense-analysis/ale'
+
 Plug 'vim-test/vim-test'
 
 Plug 'gabrielelana/vim-markdown'
-
-Plug 'neoclide/coc.nvim', {'branch': 'release'}
 
 " theme
 Plug 'arcticicestudio/nord-vim'
@@ -25,9 +27,5 @@ Plug 'junegunn/fzf.vim'
 
 Plug 'airblade/vim-gitgutter'
 
-" Tailwind
-Plug 'iamcco/coc-tailwindcss',  {'do': 'yarn install --frozen-lockfile && yarn run build'}
-
 call plug#end()
-
 
