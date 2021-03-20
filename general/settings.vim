@@ -28,6 +28,8 @@ set timeoutlen=500                      " By default timeoutlen is 1000 ms
 set formatoptions-=cro                  " Stop newline continution of comments
 set mouse=                              " Disable mouse support
 au! BufWritePost $MYVIMRC source %      " auto source when writing to init.vm
+set noswapfile
+set scrolloff=20
 
 " Show relative numbers when is in focus otherwise it shows absolute numbers
 augroup numbertoggle
