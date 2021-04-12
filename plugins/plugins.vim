@@ -2,6 +2,7 @@ call plug#begin('~/.vim/plugged')
 
 Plug 'tomtom/tcomment_vim'
 
+Plug 'easymotion/vim-easymotion'
 Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
 Plug 'tpope/vim-dispatch'
 Plug 'dense-analysis/ale'
