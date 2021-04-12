@@ -38,10 +38,6 @@ augroup numbertoggle
   autocmd BufLeave,FocusLost,InsertEnter   * set norelativenumber
 augroup END
 
-au BufWrite * :Autoformat
-
-
-
 let g:markdown_enable_spell_checking = 0
 
 let g:NERDTreeShowHidden = 1

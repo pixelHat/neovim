@@ -1,7 +1,8 @@
 call plug#begin('~/.vim/plugged')
 
-Plug 'Chiel92/vim-autoformat'
 
+Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
+Plug 'tpope/vim-dispatch'
 Plug 'dense-analysis/ale'
 
 Plug 'vim-test/vim-test'
