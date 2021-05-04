@@ -1,5 +1,7 @@
 call plug#begin('~/.vim/plugged')
 
+Plug 'nvim-treesitter/nvim-treesitter', {'do': ':TSUpdate'}
+
 Plug 'tomtom/tcomment_vim'
 
 Plug 'easymotion/vim-easymotion'
