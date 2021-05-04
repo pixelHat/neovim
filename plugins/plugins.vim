@@ -13,8 +13,6 @@ Plug 'dense-analysis/ale'
 
 Plug 'vim-test/vim-test'
 
-Plug 'gabrielelana/vim-markdown'
-
 " theme
 Plug 'arcticicestudio/nord-vim'
 
