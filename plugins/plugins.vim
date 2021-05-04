@@ -3,6 +3,10 @@ call plug#begin('~/.vim/plugged')
 Plug 'tomtom/tcomment_vim'
 
 Plug 'easymotion/vim-easymotion'
+
+" vim python motion
+Plug 'jeetsukumaran/vim-pythonsense'
+
 Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
 Plug 'tpope/vim-dispatch'
 Plug 'dense-analysis/ale'
