@@ -28,4 +28,6 @@ Plug 'airblade/vim-gitgutter'
 " Status bar
 Plug 'vim-airline/vim-airline'
 
+Plug 'digitaltoad/vim-pug'
+
 call plug#end()
