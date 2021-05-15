@@ -1,6 +1,5 @@
-colorscheme nord                        " Theme
+set termguicolors
 set guifont                             " Font configuration from terminal
-syntax enable                           " Syntax support
 set hidden                              " Required to keep multiple buffers open multiple buffers
 set nowrap                              " Display long lines as just one line
 set encoding=utf-8                      " The encoding displayed
@@ -28,7 +27,12 @@ set formatoptions-=cro                  " Stop newline continution of comments
 set mouse=                              " Disable mouse support
 set noswapfile                          " Remove swap files
 set scrolloff=20
-au BufWrite * :ALEFix
+set inccommand=split                    " Shows replacement
+
+let ayucolor="mirage"
+colorscheme ayu
+
+au TextYankPost * silent! lua vim.highlight.on_yank {higroup="IncSearch", timeout=150}
 
 " Show relative numbers when is in focus otherwise it shows absolute numbers
 augroup numbertoggle
