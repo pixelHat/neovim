@@ -38,4 +38,11 @@ nnoremap <silent> ]e :Lspsaga diagnostic_jump_prev<CR>
 set completeopt=menuone,noinsert,noselect
 set shortmess+=c
 
-autocmd BufEnter * lua require'completion'.on_attach()
+let g:completion_chain_complete_list = [
+    \{'complete_items': ['lsp', 'buffers', 'snippet', 'ts']},
+    \{'mode': '<c-p>'},
+    \{'mode': '<c-n>'}
+\]
+
+autocmd BufEnter * if &buftype != "nofile" | lua require'completion'.on_attach()
+
