@@ -1,13 +1,12 @@
 call plug#begin('~/.vim/plugged')
 
 Plug 'nvim-treesitter/nvim-treesitter', {'do': ':TSUpdate'}
+Plug 'nvim-treesitter/nvim-treesitter-textobjects'
+
 
 Plug 'tomtom/tcomment_vim'
 
 Plug 'easymotion/vim-easymotion'
-
-" vim python motion
-Plug 'jeetsukumaran/vim-pythonsense'
 
 Plug 'vim-test/vim-test'
 Plug 'tpope/vim-dispatch'
@@ -15,12 +14,14 @@ Plug 'tpope/vim-dispatch'
 " theme
 Plug 'arcticicestudio/nord-vim'
 Plug 'ayu-theme/ayu-vim'
+Plug 'savq/melange'
 
 Plug 'airblade/vim-gitgutter'
 Plug 'tpope/vim-fugitive'
 
 " Status bar
-Plug 'vim-airline/vim-airline'
+Plug 'glepnir/galaxyline.nvim' , {'branch': 'main'}
+Plug 'kyazdani42/nvim-web-devicons'
 
 Plug 'digitaltoad/vim-pug'
 
@@ -29,8 +30,7 @@ Plug 'neovim/nvim-lspconfig'
 Plug 'norcalli/snippets.nvim'
 Plug 'glepnir/lspsaga.nvim'
 
-Plug 'nvim-lua/completion-nvim'
-Plug 'steelsojka/completion-buffers'
+Plug 'hrsh7th/nvim-compe'
 
 Plug 'sbdchd/neoformat'
 

@@ -5,11 +5,23 @@ require'nvim-treesitter.configs'.setup {
   },
   indent = {
     enable = true
-  }
+  },
+  textobjects = {
+    select = {
+      enable = true,
+      keymaps = {
+        -- You can use the capture groups defined in textobjects.scm
+        ["af"] = "@function.outer",
+        ["if"] = "@function.inner",
+        ["ac"] = "@class.outer",
+        ["ic"] = "@class.inner",
+      },
+    },
+  },
 }
 EOF
 
-set foldmethod=expr
-set foldexpr=nvim_treesitter#foldexpr()
+" set foldmethod=expr
+" set foldexpr=nvim_treesitter#foldexpr()
 
 nmap <leader>z za

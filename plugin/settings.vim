@@ -3,7 +3,7 @@ set guifont                             " Font configuration from terminal
 set hidden                              " Required to keep multiple buffers open multiple buffers
 set nowrap                              " Display long lines as just one line
 set encoding=utf-8                      " The encoding displayed
-set cmdheight=2                         " More space for displaying messages
+" set cmdheight=2                         " More space for displaying messages
 set iskeyword+=-                        " treat dash separated words as a word text object"
 set splitbelow                          " Horizontal splits will automatically be below
 set splitright                          " Vertical splits will automatically be to the right
@@ -14,23 +14,18 @@ set smarttab                            " Makes tabbing smarter will realize you
 set expandtab                           " Converts tabs to spaces
 set smartindent                         " Makes indenting smart
 set autoindent                          " Good auto indent
-set laststatus=0                        " Always display the status line
 set number relativenumber               " Number and relative numbers
 set background=dark                     " tell vim what the background color looks like
-set showtabline=2                       " Always show tabs
 set noshowmode                          " We don't need to see things like -- INSERT -- anymore
-set nobackup                            " This is recommended by coc
-set nowritebackup                       " This is recommended by coc
 set updatetime=300                      " Faster completion
 set timeoutlen=500                      " By default timeoutlen is 1000 ms
 set formatoptions-=cro                  " Stop newline continution of comments
-set mouse=                              " Disable mouse support
+" set mouse=                              " Disable mouse support
 set noswapfile                          " Remove swap files
 set scrolloff=20
 set inccommand=split                    " Shows replacement
 
-let ayucolor="mirage"
-colorscheme ayu
+colorscheme melange
 
 au TextYankPost * silent! lua vim.highlight.on_yank {higroup="IncSearch", timeout=150}
 
