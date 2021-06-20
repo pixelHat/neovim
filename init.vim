@@ -38,3 +38,10 @@ nnoremap <silent> t<C-g> :TestVisit<CR>
 lua <<EOF
   require('status')
 EOF
+
+nnoremap <silent> <a-1> 1gt<cr>
+nnoremap <silent> <a-2> 2gt<cr>
+nnoremap <silent> <a-3> 3gt<cr>
+nnoremap <silent> <a-4> 4gt<cr>
+nnoremap <silent> <a-5> 5gt<cr>
+nnoremap <silent> <a-6> 6gt<cr>
