@@ -23,7 +23,7 @@ END
 nnoremap <silent>gd <cmd>lua vim.lsp.buf.definition()<CR>
 nnoremap <silent>K <cmd>lua vim.lsp.buf.hover()<CR>
 nnoremap <leader>q <cmd>lua vim.lsp.diagnostic.show_line_diagnostics()<CR>
-nnoremap <leader>w <cmd>lua vim.lsp.buf.incoming_calls()<CR>
+" nnoremap <leader>w <cmd>lua vim.lsp.buf.incoming_calls()<CR>
 
 nnoremap <silent>gr :Lspsaga rename<CR>
 nnoremap <silent>gh :Lspsaga lsp_finder<CR>
