@@ -15,6 +15,9 @@ Plug 'tpope/vim-dispatch'
 Plug 'arcticicestudio/nord-vim'
 Plug 'ayu-theme/ayu-vim'
 Plug 'savq/melange'
+Plug 'embark-theme/vim', { 'as': 'embark' }
+Plug 'projekt0n/github-nvim-theme'
+
 
 Plug 'airblade/vim-gitgutter'
 Plug 'tpope/vim-fugitive'

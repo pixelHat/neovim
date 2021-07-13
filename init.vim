@@ -25,9 +25,6 @@ nnoremap <C-j> <C-w>j
 nnoremap <C-k> <C-w>k
 nnoremap <C-l> <C-w>l
 
-" Add extra lines at bottom
-nnoremap j jzz
-
 let test#strategy = "dispatch"
 nnoremap <silent> t<C-n> :TestNearest<CR>
 nnoremap <silent> t<C-f> :TestFile<CR>
@@ -45,3 +42,5 @@ nnoremap <silent> <a-3> 3gt<cr>
 nnoremap <silent> <a-4> 4gt<cr>
 nnoremap <silent> <a-5> 5gt<cr>
 nnoremap <silent> <a-6> 6gt<cr>
+
+lua require('github-theme').setup()
