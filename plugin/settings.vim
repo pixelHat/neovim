@@ -3,7 +3,7 @@ set guifont                             " Font configuration from terminal
 set hidden                              " Required to keep multiple buffers open multiple buffers
 set nowrap                              " Display long lines as just one line
 set encoding=utf-8                      " The encoding displayed
-" set cmdheight=2                         " More space for displaying messages
+set cmdheight=2                         " More space for displaying messages
 set iskeyword+=-                        " treat dash separated words as a word text object"
 set splitbelow                          " Horizontal splits will automatically be below
 set splitright                          " Vertical splits will automatically be to the right
@@ -25,7 +25,7 @@ set noswapfile                          " Remove swap files
 set scrolloff=20
 set inccommand=split                    " Shows replacement
 
-colorscheme melange
+" colorscheme melange
 
 au TextYankPost * silent! lua vim.highlight.on_yank {higroup="IncSearch", timeout=150}
 
