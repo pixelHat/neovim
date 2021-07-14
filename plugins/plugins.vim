@@ -45,4 +45,10 @@ Plug 'nvim-telescope/telescope.nvim'
 " Ranger
 Plug 'rbgrouleff/bclose.vim'
 Plug 'francoiscabrol/ranger.vim'
+
+Plug 'tpope/vim-surround'
+Plug 'sheerun/vim-polyglot'
+Plug 'AndrewRadev/tagalong.vim'
+Plug 'mattn/emmet-vim'
+
 call plug#end()
