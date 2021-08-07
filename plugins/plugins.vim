@@ -51,4 +51,5 @@ Plug 'sheerun/vim-polyglot'
 Plug 'AndrewRadev/tagalong.vim'
 Plug 'mattn/emmet-vim'
 
+Plug 'mfussenegger/nvim-dap'
 call plug#end()
