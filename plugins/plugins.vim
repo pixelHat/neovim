@@ -22,10 +22,6 @@ Plug 'projekt0n/github-nvim-theme'
 Plug 'airblade/vim-gitgutter'
 Plug 'tpope/vim-fugitive'
 
-" Status bar
-Plug 'glepnir/galaxyline.nvim' , {'branch': 'main'}
-Plug 'kyazdani42/nvim-web-devicons'
-
 Plug 'digitaltoad/vim-pug'
 
 Plug 'neovim/nvim-lsp'
@@ -51,4 +47,5 @@ Plug 'sheerun/vim-polyglot'
 Plug 'AndrewRadev/tagalong.vim'
 Plug 'mattn/emmet-vim'
 
+Plug 'beauwilliams/statusline.lua'
 call plug#end()

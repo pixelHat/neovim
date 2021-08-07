@@ -32,10 +32,6 @@ nnoremap <silent> t<C-s> :TestSuite<CR>
 nnoremap <silent> t<C-l> :TestLast<CR>
 nnoremap <silent> t<C-g> :TestVisit<CR>
 
-lua <<EOF
-  require('status')
-EOF
-
 nnoremap <silent> <a-1> 1gt<cr>
 nnoremap <silent> <a-2> 2gt<cr>
 nnoremap <silent> <a-3> 3gt<cr>
