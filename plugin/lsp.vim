@@ -16,6 +16,8 @@ lua << END
 
   require'lspconfig'.jdtls.setup{}
 
+  require'lspconfig'.omnisharp.setup{}
+
   local saga = require 'lspsaga'
   saga.init_lsp_saga({
     finder_action_keys = {
@@ -39,3 +41,12 @@ nnoremap <silent><leader>q <cmd>lua require'lspsaga.diagnostic'.show_line_diagno
 nnoremap <silent> [e :Lspsaga diagnostic_jump_next<CR>
 nnoremap <silent> ]e :Lspsaga diagnostic_jump_prev<CR>
 
+lua require'snippets'.use_suggested_mappings()
+
+lua <<EOF
+require'snippets'.snippets = {
+  python = {
+    ["for"] = "for ${1:i} in ${2:t}:\n";
+  }
+}
+EOF

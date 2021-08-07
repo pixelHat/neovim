@@ -48,4 +48,5 @@ Plug 'AndrewRadev/tagalong.vim'
 Plug 'mattn/emmet-vim'
 
 Plug 'beauwilliams/statusline.lua'
+Plug 'mfussenegger/nvim-dap'
 call plug#end()
