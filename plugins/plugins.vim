@@ -1,5 +1,4 @@
 call plug#begin('~/.vim/plugged')
-
 Plug 'nvim-treesitter/nvim-treesitter', {'do': ':TSUpdate'}
 Plug 'nvim-treesitter/nvim-treesitter-textobjects'
 
@@ -26,8 +25,8 @@ Plug 'digitaltoad/vim-pug'
 
 Plug 'neovim/nvim-lsp'
 Plug 'neovim/nvim-lspconfig'
-Plug 'norcalli/snippets.nvim'
-Plug 'glepnir/lspsaga.nvim'
+Plug 'tami5/lspsaga.nvim', { 'branch': 'nvim51' }
+
 
 Plug 'hrsh7th/nvim-compe'
 
