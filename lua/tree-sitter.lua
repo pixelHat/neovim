@@ -1,4 +1,3 @@
-lua <<EOF
 require'nvim-treesitter.configs'.setup {
   ensure_installed = {"python", "haskell", "typescript", "javascript", "bash", "vue", "scss", "lua", "html", "dockerfile"},
   highlight = {
@@ -63,11 +62,5 @@ require'nvim-treesitter.configs'.setup {
         ["dF"] = "@class.outer",
       },
     },
-  },
+  }
 }
-EOF
-
-" set foldmethod=expr
-" set foldexpr=nvim_treesitter#foldexpr()
-
-nmap <leader>z za
