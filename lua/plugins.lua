@@ -5,7 +5,7 @@ vim.call('plug#begin', '~/.vim/plugged')
 Plug('nvim-treesitter/nvim-treesitter')
 Plug 'nvim-treesitter/nvim-treesitter-textobjects'
 
-Plug 'tomtom/tcomment_vim'
+Plug 'numToStr/Comment.nvim'
 
 Plug 'easymotion/vim-easymotion'
 
