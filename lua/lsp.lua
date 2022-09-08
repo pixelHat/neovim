@@ -14,7 +14,7 @@ end
 
 local servers = {
   'tsserver', 'cssls', 'html', 'angularls', 'rust_analyzer',
-  'pyright', 'vuels'
+  'pyright', 'vuels', 'csharp_ls'
 }
 for _, server in pairs(servers) do
   lspconfig[server].setup{
