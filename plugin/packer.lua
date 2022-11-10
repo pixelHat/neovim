@@ -16,10 +16,17 @@ return require("packer").startup(
 
         -- " theme
         use "arcticicestudio/nord-vim"
-        use "ayu-theme/ayu-vim"
+        -- use "ayu-theme/ayu-vim"
         use "savq/melange"
         -- use 'embark-theme/vim', { 'as': 'embark' }
         use "projekt0n/github-nvim-theme"
+        use "Shatur/neovim-ayu"
+        use {
+            "olivercederborg/poimandres.nvim",
+            config = function()
+                require("poimandres").setup {}
+            end
+        }
 
         use "airblade/vim-gitgutter"
         use "tpope/vim-fugitive"
@@ -28,16 +35,12 @@ return require("packer").startup(
 
         use "neovim/nvim-lsp"
         use "neovim/nvim-lspconfig"
-        -- use ('tami5/lspsaga.nvim', { 'branch'= 'nvim51' })
+        use({"L3MON4D3/LuaSnip", tag = "v<CurrentMajor>.*"})
         use "hrsh7th/nvim-cmp"
         use "hrsh7th/cmp-nvim-lsp"
         use "hrsh7th/cmp-buffer"
         use "hrsh7th/cmp-path"
         use "hrsh7th/cmp-cmdline"
-        -- use 'L3MON4D3/LuaSnip'
-        use "hrsh7th/cmp-vsnip"
-        -- " use 'hrsh7th/vim-vsnip'
-        -- " use 'rafamadriz/friendly-snippets'
 
         use "sbdchd/neoformat"
 
@@ -52,5 +55,16 @@ return require("packer").startup(
 
         use "beauwilliams/statusline.lua"
         use "mfussenegger/nvim-dap"
+
+        use(
+            {
+                "jakewvincent/mkdnflow.nvim",
+                rocks = "luautf8", -- Ensures optional luautf8 dependency is installed
+                config = function()
+                    require("mkdnflow").setup({})
+                end
+            }
+        )
+        use "jbyuki/nabla.nvim"
     end
 )

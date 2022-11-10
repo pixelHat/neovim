@@ -8,8 +8,3 @@ vim.api.nvim_set_keymap("n", "t<C-f>", ":TestFile<CR>", {noremap = true, silent 
 vim.api.nvim_set_keymap("n", "t<C-s>", ":TestSuite<CR>", {noremap = true, silent = true})
 vim.api.nvim_set_keymap("n", "t<C-l>", ":TestLast<CR>", {noremap = true, silent = true})
 vim.api.nvim_set_keymap("n", "t<C-g>", ":TestVisit<CR>", {noremap = true, silent = true})
-
-vim.cmd("colorscheme melange")
-
-local statusline = require("statusline")
-statusline.tabline = false
