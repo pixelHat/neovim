@@ -20,7 +20,8 @@ local servers = {
     "rust_analyzer",
     "pyright",
     "vuels",
-    "csharp_ls"
+    "csharp_ls",
+    "astro"
 }
 for _, server in pairs(servers) do
     lspconfig[server].setup {

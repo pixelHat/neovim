@@ -10,4 +10,4 @@ require("ayu").setup(
         overrides = {} -- A dictionary of group names, each associated with a dictionary of parameters (`bg`, `fg`, `sp` and `style`) and colors in hex.
     }
 )
-vim.cmd("colorscheme poimandres")
+vim.cmd("colorscheme ayu")

@@ -66,5 +66,6 @@ return require("packer").startup(
             }
         )
         use "jbyuki/nabla.nvim"
+        use "elkowar/yuck.vim"
     end
 )
