@@ -11,7 +11,8 @@ require'nvim-treesitter.configs'.setup {
     "scss",
     "lua",
     "html",
-    "dockerfile"
+    "dockerfile",
+    "svelte"
   },
   highlight = {
     enable = true,
