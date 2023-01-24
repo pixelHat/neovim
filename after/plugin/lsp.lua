@@ -26,6 +26,7 @@ local servers = {
 	"astro",
 	"sumneko_lua",
 	"hls",
+	"svelte",
 }
 
 mason.setup({

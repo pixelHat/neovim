@@ -29,6 +29,8 @@ return require("packer").startup(function(use)
 			require("poimandres").setup({})
 		end,
 	})
+  use 'JoosepAlviste/palenightfall.nvim'
+
 
 	-- git integration
 	use("airblade/vim-gitgutter")
