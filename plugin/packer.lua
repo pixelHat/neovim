@@ -10,7 +10,7 @@ return require("packer").startup(function(use)
 	use({
 		"williamboman/mason.nvim",
 		"williamboman/mason-lspconfig.nvim",
-		"neovim/nvim-lspconfig",
+            "neovim/nvim-lspconfig",
 		"mhartington/formatter.nvim",
 	})
 
@@ -29,8 +29,7 @@ return require("packer").startup(function(use)
 			require("poimandres").setup({})
 		end,
 	})
-  use 'JoosepAlviste/palenightfall.nvim'
-
+	use("JoosepAlviste/palenightfall.nvim")
 
 	-- git integration
 	use("airblade/vim-gitgutter")
@@ -57,12 +56,6 @@ return require("packer").startup(function(use)
 	use("mfussenegger/nvim-dap")
 	use("numToStr/Comment.nvim")
 	use("easymotion/vim-easymotion")
-	use({
-		"https://git.sr.ht/~whynothugo/lsp_lines.nvim",
-		config = function()
-			require("lsp_lines").setup()
-		end,
-	})
 
 	-- languages
 	use("elkowar/yuck.vim")

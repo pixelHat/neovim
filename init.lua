@@ -9,9 +9,8 @@ require("Comment").setup()
 -- 	overrides = {}, -- A dictionary of group names, each associated with a dictionary of parameters (`bg`, `fg`, `sp` and `style`) and colors in hex.
 -- })
 -- vim.cmd("colorscheme nordic")
-require('palenightfall').setup()
-
+require("palenightfall").setup()
 
 vim.diagnostic.config({
-	virtual_text = false,
+	virtual_text = true,
 })
