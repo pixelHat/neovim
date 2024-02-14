@@ -18,16 +18,24 @@ local servers = {
 	"angularls",
 	"rust_analyzer",
 	"pyright",
-	"vuels",
 	"astro",
 	"lua_ls",
 	"hls",
 	"svelte",
 }
 
+local util = require("lspconfig.util")
+
 local lspconfig = require("lspconfig")
 lspconfig.pyright.setup({})
 lspconfig.tsserver.setup({})
+lspconfig.golangci_lint_ls.setup({})
+lspconfig.gopls.setup({})
+lspconfig.volar.setup({})
+lspconfig.solargraph.setup({
+	completion = true,
+})
+lspconfig.ccls.setup({})
 lspconfig.rust_analyzer.setup({
 	-- Server-specific settings. See `:help lspconfig-setup`
 	settings = {
@@ -35,3 +43,15 @@ lspconfig.rust_analyzer.setup({
 	},
 })
 
+-- vim.lsp.handlers["textDocument/publishDiagnostics"] = vim.lsp.with(vim.lsp.diagnostic.on_publish_diagnostics, {
+-- 	-- Use a function to dynamically turn signs off
+-- 	-- and on, using buffer local variables
+-- 	signs = function(namespace, bufnr)
+-- 		local ab = vim.diagnostic.get(bufnr)
+-- 		for key, value in pairs(ab) do
+-- 			for key2, value2 in pairs(value) do
+-- 				print(key2, value2)
+-- 			end
+-- 		end
+-- 	end,
+-- })

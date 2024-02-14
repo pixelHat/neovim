@@ -8,9 +8,9 @@ return require("packer").startup(function(use)
 
 	-- manson
 	use({
-		"williamboman/mason.nvim",
-		"williamboman/mason-lspconfig.nvim",
-            "neovim/nvim-lspconfig",
+		-- "williamboman/mason.nvim",
+		-- "williamboman/mason-lspconfig.nvim",
+		"neovim/nvim-lspconfig",
 		"mhartington/formatter.nvim",
 	})
 
@@ -42,6 +42,7 @@ return require("packer").startup(function(use)
 	use("hrsh7th/cmp-buffer")
 	use("hrsh7th/cmp-path")
 	use("hrsh7th/cmp-cmdline")
+	use("saadparwaiz1/cmp_luasnip")
 
 	-- " Telescope
 	use("nvim-lua/popup.nvim")
@@ -51,13 +52,17 @@ return require("packer").startup(function(use)
 	-- others
 	use("tpope/vim-surround")
 	use("AndrewRadev/tagalong.vim")
-	use("mattn/emmet-vim")
+	-- use("mattn/emmet-vim")
 	use("beauwilliams/statusline.lua")
 	use("mfussenegger/nvim-dap")
 	use("numToStr/Comment.nvim")
-	use("easymotion/vim-easymotion")
+	-- use("easymotion/vim-easymotion")
 
 	-- languages
 	use("elkowar/yuck.vim")
 	use("digitaltoad/vim-pug")
+
+	-- sourcegraph
+	use({ "sourcegraph/sg.nvim", run = "nvim -l build/init.lua" })
+	use({ "onsails/lspkind.nvim" })
 end)
