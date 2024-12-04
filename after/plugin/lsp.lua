@@ -1,5 +1,3 @@
-local mason = require("mason")
-local mason_lspconfig = require("mason-lspconfig")
 local capabilities = vim.lsp.protocol.make_client_capabilities()
 capabilities.textDocument.completion.completionItem.snippetSupport = true
 
@@ -42,6 +40,21 @@ lspconfig.rust_analyzer.setup({
 		["rust-analyzer"] = {},
 	},
 })
+lspconfig.jdtls.setup({})
+lspconfig.svelte.setup({})
+lspconfig.tailwindcss.setup({
+	-- classAttributes = { "class", "className", "class:list", "classList", "ngClass" },
+	-- lint = {
+	-- 	cssConflict = "warning",
+	-- 	invalidApply = "error",
+	-- 	invalidConfigPath = "error",
+	-- 	invalidScreen = "error",
+	-- 	invalidTailwindDirective = "error",
+	-- 	invalidVariant = "error",
+	-- 	recommendedVariantOrder = "warning",
+	-- },
+	-- validate = true,
+})
 
 -- vim.lsp.handlers["textDocument/publishDiagnostics"] = vim.lsp.with(vim.lsp.diagnostic.on_publish_diagnostics, {
 -- 	-- Use a function to dynamically turn signs off
@@ -55,3 +68,6 @@ lspconfig.rust_analyzer.setup({
 -- 		end
 -- 	end,
 -- })
+--
+vim.lsp.set_log_level("debug")
+vim.env.PATH = "/home/hall/.asdf/installs/nodejs/19.2.0/bin" .. vim.env.PATH

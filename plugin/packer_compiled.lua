@@ -49,8 +49,8 @@ local function save_profiles(threshold)
 end
 
 time([[Luarocks path setup]], true)
-local package_path_str = "/home/hall/.cache/nvim/packer_hererocks/2.1.1700008891/share/lua/5.1/?.lua;/home/hall/.cache/nvim/packer_hererocks/2.1.1700008891/share/lua/5.1/?/init.lua;/home/hall/.cache/nvim/packer_hererocks/2.1.1700008891/lib/luarocks/rocks-5.1/?.lua;/home/hall/.cache/nvim/packer_hererocks/2.1.1700008891/lib/luarocks/rocks-5.1/?/init.lua"
-local install_cpath_pattern = "/home/hall/.cache/nvim/packer_hererocks/2.1.1700008891/lib/lua/5.1/?.so"
+local package_path_str = "/home/hall/.cache/nvim/packer_hererocks/2.1.1727870382/share/lua/5.1/?.lua;/home/hall/.cache/nvim/packer_hererocks/2.1.1727870382/share/lua/5.1/?/init.lua;/home/hall/.cache/nvim/packer_hererocks/2.1.1727870382/lib/luarocks/rocks-5.1/?.lua;/home/hall/.cache/nvim/packer_hererocks/2.1.1727870382/lib/luarocks/rocks-5.1/?/init.lua"
+local install_cpath_pattern = "/home/hall/.cache/nvim/packer_hererocks/2.1.1727870382/lib/lua/5.1/?.so"
 if not string.find(package.path, package_path_str, 1, true) then
   package.path = package.path .. ';' .. package_path_str
 end
@@ -109,11 +109,6 @@ _G.packer_plugins = {
     path = "/home/hall/.local/share/nvim/site/pack/packer/start/cmp_luasnip",
     url = "https://github.com/saadparwaiz1/cmp_luasnip"
   },
-  ["emmet-vim"] = {
-    loaded = true,
-    path = "/home/hall/.local/share/nvim/site/pack/packer/start/emmet-vim",
-    url = "https://github.com/mattn/emmet-vim"
-  },
   ["formatter.nvim"] = {
     loaded = true,
     path = "/home/hall/.local/share/nvim/site/pack/packer/start/formatter.nvim",
@@ -128,16 +123,6 @@ _G.packer_plugins = {
     loaded = true,
     path = "/home/hall/.local/share/nvim/site/pack/packer/start/lspkind.nvim",
     url = "https://github.com/onsails/lspkind.nvim"
-  },
-  ["mason-lspconfig.nvim"] = {
-    loaded = true,
-    path = "/home/hall/.local/share/nvim/site/pack/packer/start/mason-lspconfig.nvim",
-    url = "https://github.com/williamboman/mason-lspconfig.nvim"
-  },
-  ["mason.nvim"] = {
-    loaded = true,
-    path = "/home/hall/.local/share/nvim/site/pack/packer/start/mason.nvim",
-    url = "https://github.com/williamboman/mason.nvim"
   },
   melange = {
     loaded = true,
@@ -179,6 +164,16 @@ _G.packer_plugins = {
     path = "/home/hall/.local/share/nvim/site/pack/packer/start/nvim-treesitter-textobjects",
     url = "https://github.com/nvim-treesitter/nvim-treesitter-textobjects"
   },
+  ["nvim-ts-autotag"] = {
+    loaded = true,
+    path = "/home/hall/.local/share/nvim/site/pack/packer/start/nvim-ts-autotag",
+    url = "https://github.com/windwp/nvim-ts-autotag"
+  },
+  ["otter.nvim"] = {
+    loaded = true,
+    path = "/home/hall/.local/share/nvim/site/pack/packer/start/otter.nvim",
+    url = "https://github.com/jmbuhr/otter.nvim"
+  },
   ["packer.nvim"] = {
     loaded = true,
     path = "/home/hall/.local/share/nvim/site/pack/packer/start/packer.nvim",
@@ -205,15 +200,10 @@ _G.packer_plugins = {
     path = "/home/hall/.local/share/nvim/site/pack/packer/start/popup.nvim",
     url = "https://github.com/nvim-lua/popup.nvim"
   },
-  ["sg.nvim"] = {
+  ["quarto-nvim"] = {
     loaded = true,
-    path = "/home/hall/.local/share/nvim/site/pack/packer/start/sg.nvim",
-    url = "https://github.com/sourcegraph/sg.nvim"
-  },
-  ["statusline.lua"] = {
-    loaded = true,
-    path = "/home/hall/.local/share/nvim/site/pack/packer/start/statusline.lua",
-    url = "https://github.com/beauwilliams/statusline.lua"
+    path = "/home/hall/.local/share/nvim/site/pack/packer/start/quarto-nvim",
+    url = "https://github.com/quarto-dev/quarto-nvim"
   },
   ["tagalong.vim"] = {
     loaded = true,
@@ -225,25 +215,20 @@ _G.packer_plugins = {
     path = "/home/hall/.local/share/nvim/site/pack/packer/start/telescope.nvim",
     url = "https://github.com/nvim-telescope/telescope.nvim"
   },
+  ["v-vim"] = {
+    loaded = true,
+    path = "/home/hall/.local/share/nvim/site/pack/packer/start/v-vim",
+    url = "https://github.com/ollykel/v-vim"
+  },
   ["vim-dispatch"] = {
     loaded = true,
     path = "/home/hall/.local/share/nvim/site/pack/packer/start/vim-dispatch",
     url = "https://github.com/tpope/vim-dispatch"
   },
-  ["vim-easymotion"] = {
-    loaded = true,
-    path = "/home/hall/.local/share/nvim/site/pack/packer/start/vim-easymotion",
-    url = "https://github.com/easymotion/vim-easymotion"
-  },
   ["vim-fugitive"] = {
     loaded = true,
     path = "/home/hall/.local/share/nvim/site/pack/packer/start/vim-fugitive",
     url = "https://github.com/tpope/vim-fugitive"
-  },
-  ["vim-gitgutter"] = {
-    loaded = true,
-    path = "/home/hall/.local/share/nvim/site/pack/packer/start/vim-gitgutter",
-    url = "https://github.com/airblade/vim-gitgutter"
   },
   ["vim-pug"] = {
     loaded = true,

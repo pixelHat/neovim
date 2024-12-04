@@ -32,7 +32,7 @@ return require("packer").startup(function(use)
 	use("JoosepAlviste/palenightfall.nvim")
 
 	-- git integration
-	use("airblade/vim-gitgutter")
+	-- use("airblade/vim-gitgutter")
 	use("tpope/vim-fugitive")
 
 	-- autocomplete
@@ -53,7 +53,7 @@ return require("packer").startup(function(use)
 	use("tpope/vim-surround")
 	use("AndrewRadev/tagalong.vim")
 	-- use("mattn/emmet-vim")
-	use("beauwilliams/statusline.lua")
+	-- use("beauwilliams/statusline.lua")
 	use("mfussenegger/nvim-dap")
 	use("numToStr/Comment.nvim")
 	-- use("easymotion/vim-easymotion")
@@ -63,6 +63,19 @@ return require("packer").startup(function(use)
 	use("digitaltoad/vim-pug")
 
 	-- sourcegraph
-	use({ "sourcegraph/sg.nvim", run = "nvim -l build/init.lua" })
+	-- use({ "sourcegraph/sg.nvim", run = "nvim -l build/init.lua" })
+
+	-- codeium
+	-- use({ "Exafunction/codeium.vim" })
+
+	-- ruby
 	use({ "onsails/lspkind.nvim" })
+
+	-- web
+	use({ "windwp/nvim-ts-autotag" })
+
+	use({ "ollykel/v-vim" })
+
+	use({ "jmbuhr/otter.nvim" })
+	use({ "quarto-dev/quarto-nvim" })
 end)
