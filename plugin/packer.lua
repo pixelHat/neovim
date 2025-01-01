@@ -78,4 +78,25 @@ return require("packer").startup(function(use)
 
 	use({ "jmbuhr/otter.nvim" })
 	use({ "quarto-dev/quarto-nvim" })
+
+	-- Packer
+	use({
+		"jackMort/ChatGPT.nvim",
+		config = function()
+			require("chatgpt").setup()
+		end,
+		requires = {
+			"MunifTanjim/nui.nvim",
+			"nvim-lua/plenary.nvim",
+			"folke/trouble.nvim",
+			"nvim-telescope/telescope.nvim",
+		},
+	})
+
+	use({
+		"folke/which-key.nvim",
+		requires = {
+			"nvim-tree/nvim-web-devicons",
+		},
+	})
 end)

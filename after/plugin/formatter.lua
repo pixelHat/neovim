@@ -58,7 +58,9 @@ require("formatter").setup({
 		ruby = {
 			require("formatter.filetypes.ruby").rubocop,
 		},
-
+		python = {
+			require("formatter.filetypes.python").black,
+		},
 		-- Use the special "*" filetype for defining formatter configurations on
 		-- any filetype
 		["*"] = {
